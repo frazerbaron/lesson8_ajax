@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: frazer baron
+Date: 11/30/16
 Filename:   Movie.html
 - ->
     
@@ -53,6 +53,47 @@ Filename:   Movie.html
             <h3 class="list-group-item-heading">Release Date:</h3>
             <p class="list-group-item-text lead text-primary" id="Released">  </p>
         </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Year:</h3>
+            <p class="list-group-item-text lead text-primary" id="Year">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Director:</h3>
+            <p class="list-group-item-text lead text-primary" id="Director">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Genre:</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Writer:</h3>
+            <p class="list-group-item-text lead text-primary" id="Writer">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Country:</h3>
+            <p class="list-group-item-text lead text-primary" id="Country">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Awards:</h3>
+            <p class="list-group-item-text lead text-primary" id="Awards">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Language:</h3>
+            <p class="list-group-item-text lead text-primary" id="Language">  </p>
+        </a> 
+        
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">imdb Rating:</h3>
+            <p class="list-group-item-text lead text-primary" id="imdbRating">  </p>
+        </a> 
+
 
     </div>
 </div> 
@@ -71,6 +112,14 @@ Filename:   Movie.html
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
+                     $('#Year').html(json.Year);
+                     $('#Director').html(json.Director);
+                     $('#Genre').html(json.Genre);
+                     $('#Writer').html(json.Writer);
+                     $('#Country').html(json.Country);
+                     $('#Awards').html(json.Awards);
+                     $('#Language').html(json.Language);
+                     $('#imdbRating').html(json.imdbRating);
                 })
                 .fail(function() {
                       alert("Posting failed.");              
